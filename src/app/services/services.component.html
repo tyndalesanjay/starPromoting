@@ -1,0 +1,37 @@
+<main>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="service-container">
+        <div class="service-section1">
+            <span>We Offer</span>
+            <h4>Digital Advertising <br> Service</h4>
+            <p>We are a full-service marketing and design firm.</p>
+        </div>
+        <div class="Section2">
+            <div class="fullSection">
+                <h4>Digital Advertising</h4>
+                <span>Looking for someone to help you with your ads? Just contact us now!</span>
+                <p>Star Promotions is a professional internet marketing agency which provides SEO, SMM, PPC design services and much more to different-niche businesses all over the world.  Our agency builds personal brands for entrepreneurs and corporate.</p>
+            </div>
+            <hr class="hr1">
+        </div>
+        <div class="services-grid">
+            <div class="services-card" *ngFor="let card of serviceList">
+                <h4>{{card.title}}</h4>
+                <p>{{card.info}}</p>
+                <a routerLink="{{card.link}}">Learn More</a>
+            </div>
+        </div>
+    </div>
+</main>

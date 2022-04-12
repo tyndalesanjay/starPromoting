@@ -1,0 +1,68 @@
+<main>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="contact-container">
+        <div class="contact-section1">
+            <span>Be in Touch</span>
+            <h4>Contact Us</h4>
+            <p>Get a free consultation with a marketing expert to discover <br> opportunities for you type of products or services.</p>
+        </div>
+        <div class="contacts-grid">
+            <div class="contacts-card" *ngFor="let card of contactType">
+                <i class="{{card.icon}}"></i>
+                <h4>{{card.type}}</h4>
+                <p>{{card.info}}</p>
+                <p>{{card.info2}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-Container" style="background-color: #f5f4f8;">
+        <div class="hr1"></div>
+        <div class="form">
+            <div class="formInfo">
+                <span>Contact Us</span>
+                <h4>Send us a message</h4>
+                <p>Fill up the form below, and we will get in touch very soon! Your attention is very important to us and we constantly stay in touch.</p>
+            </div>
+            <div class="container">
+                <form action="" [formGroup]="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Name:</label>
+                        <input type="text" name="fullName" class="form-control" formControlName="fullName">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="number">Phone Number:</label>
+                        <input type="text" name="number" class="form-control" formControlName="number">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" class="form-control" formControlName="email">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" class="form-control" formControlName="company">
+                    </div><br>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" class="form-control" formControlName="message"></textarea>
+                    </div><br>
+                    <div class="form-group" [ngStyle]="{'width': '2vw'}">        
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-primary" style="background-color: white; color: black;">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

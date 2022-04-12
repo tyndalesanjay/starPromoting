@@ -1,0 +1,130 @@
+<main>
+    <div class="home-section1">
+        <div class="section1-left">
+            <h1>{{heading}}</h1>
+            <p>#1 full-service advertising agency. We provide highest quality advertising services to our Clients.</p>
+            <a [ngStyle]="{'cursor': 'pointer', 'padding': '2rem 1.8em', 'margin': '0em 1.8rem', 'background': 'transparent', 'outline': 'none', 'border': '3px solid white', 'color':'white', 'border-radius': '7px'}">Get Started</a>
+        </div>
+        <div class="section1-right"></div>
+    </div>
+    <div class="horiBar">Scroll Down <br><i class="fa-solid fa-arrow-down"></i></div>
+    <div class="section2-services">
+        <h3>Our Services</h3>
+        <div class="horiBar2"></div>
+        <div class="services-grid">
+            <div class="services-card" *ngFor="let card of serviceList">
+                <h4>{{card.title}}</h4>
+                <p>{{card.info}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="section3-aboutUs">
+        <div class="about-header">
+            <p>About Us</p>
+            <h2>We help grow brands <br> successfully</h2>
+        </div>
+        <div class="aboutUs-info">
+            <p>Star Promotions is a professional internet marketing agency which provides SEO, SMM, PPC, design <br> services and much more to different-niche businesses all over the world.</p>
+        </div>
+        <div class="about-points">
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="icon">
+                        <svg width="62" height="92" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" fill="#FF7E61">
+                            <path d="M35.625 18.75H41.25V22.5H35.625V18.75ZM0 18.75H5.625V22.5H0V18.75ZM22.5 0V5.625H18.75V0H22.5ZM7.35 4.6875L11.3438 8.7L8.68125 11.3438L4.6875 7.36875L7.35 4.6875ZM29.9063 8.68125L33.8812 4.6875L36.5625 7.36875L32.5688 11.3438L29.9063 8.68125ZM20.625 9.375C23.6087 9.375 26.4702 10.5603 28.58 12.67C30.6897 14.7798 31.875 17.6413 31.875 20.625C31.875 24.7875 29.6063 28.425 26.25 30.375V33.75C26.25 34.2473 26.0525 34.7242 25.7008 35.0758C25.3492 35.4275 24.8723 35.625 24.375 35.625H16.875C16.3777 35.625 15.9008 35.4275 15.5492 35.0758C15.1975 34.7242 15 34.2473 15 33.75V30.375C11.6438 28.425 9.375 24.7875 9.375 20.625C9.375 17.6413 10.5603 14.7798 12.67 12.67C14.7798 10.5603 17.6413 9.375 20.625 9.375ZM24.375 37.5V39.375C24.375 39.8723 24.1775 40.3492 23.8258 40.7008C23.4742 41.0525 22.9973 41.25 22.5 41.25H18.75C18.2527 41.25 17.7758 41.0525 17.4242 40.7008C17.0725 40.3492 16.875 39.8723 16.875 39.375V37.5H24.375ZM18.75 31.875H22.5V27.8813C25.7437 27.0562 28.125 24.1125 28.125 20.625C28.125 18.6359 27.3348 16.7282 25.9283 15.3217C24.5218 13.9152 22.6141 13.125 20.625 13.125C18.6359 13.125 16.7282 13.9152 15.3217 15.3217C13.9152 16.7282 13.125 18.6359 13.125 20.625C13.125 24.1125 15.5063 27.0562 18.75 27.8813V31.875Z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <p>Everyday Fresh Ideas</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="icon">
+                        <svg width="62" height="92" viewBox="0 0 42 30" xmlns="http://www.w3.org/2000/svg" fill="#FF7E61">
+                            <path d="M26.25 0C30.2282 0 34.0436 1.58035 36.8566 4.3934C39.6696 7.20644 41.25 11.0218 41.25 15C41.25 18.9782 39.6696 22.7936 36.8566 25.6066C34.0436 28.4196 30.2282 30 26.25 30C22.2718 30 18.4564 28.4196 15.6434 25.6066C12.8304 22.7936 11.25 18.9782 11.25 15C11.25 11.0218 12.8304 7.20644 15.6434 4.3934C18.4564 1.58035 22.2718 0 26.25 0ZM26.25 3.75C23.2663 3.75 20.4048 4.93526 18.295 7.04505C16.1853 9.15483 15 12.0163 15 15C15 17.9837 16.1853 20.8452 18.295 22.955C20.4048 25.0647 23.2663 26.25 26.25 26.25C29.2337 26.25 32.0952 25.0647 34.205 22.955C36.3147 20.8452 37.5 17.9837 37.5 15C37.5 12.0163 36.3147 9.15483 34.205 7.04505C32.0952 4.93526 29.2337 3.75 26.25 3.75ZM24.375 7.5H27.1875V14.5875L31.5562 18.9562L29.5688 20.9438L24.375 15.75V7.5ZM1.875 26.25C1.37772 26.25 0.900805 26.0525 0.549175 25.7008C0.197544 25.3492 0 24.8723 0 24.375C0 23.8777 0.197544 23.4008 0.549175 23.0492C0.900805 22.6975 1.37772 22.5 1.875 22.5H9.05625C9.6375 23.8312 10.3875 25.0875 11.25 26.25H1.875ZM3.75 16.875C3.25272 16.875 2.77581 16.6775 2.42417 16.3258C2.07254 15.9742 1.875 15.4973 1.875 15C1.875 14.5027 2.07254 14.0258 2.42417 13.6742C2.77581 13.3225 3.25272 13.125 3.75 13.125H7.59375L7.5 15L7.59375 16.875H3.75ZM5.625 7.5C5.12772 7.5 4.65081 7.30246 4.29917 6.95082C3.94754 6.59919 3.75 6.12228 3.75 5.625C3.75 5.12772 3.94754 4.65081 4.29917 4.29918C4.65081 3.94754 5.12772 3.75 5.625 3.75H11.25C10.3875 4.9125 9.6375 6.16875 9.05625 7.5H5.625Z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <p>Smart & Fast Solutions</p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="icon">
+                        <svg width="62" height="92" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" fill="#FF7E61">
+                            <path d="M0 0V16.875C0 18.75 1.875 20.625 3.75 20.625H7.875C8.625 24.375 11.0625 27.5625 16.875 28.125V32.0625C12.75 32.4375 11.25 34.5 11.25 36.9375V37.5H26.25V36.9375C26.25 34.5 24.75 32.4375 20.625 32.0625V28.125C26.4375 27.5625 28.875 24.375 29.625 20.625H33.75C35.625 20.625 37.5 18.75 37.5 16.875V0H30C28.3125 0 26.25 1.875 26.25 3.75H11.25C11.25 1.875 9.1875 0 7.5 0H0ZM3.75 3.75H7.5V7.5V16.875H3.75V3.75ZM30 3.75H33.75V16.875H30V7.5V3.75ZM11.25 7.5H26.25V17.8125C26.25 21.4312 25.1625 24.375 18.75 24.375C12.3562 24.375 11.25 21.4312 11.25 17.8125V7.5Z"></path>
+                        </svg>
+                    </div>
+                    <div class="card-info">
+                        <p>Achievements Of Goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="request-qoute">
+        <div class="qoute-info">
+            <div class="request-left">
+                <span>Request a Quote</span> <br>
+                <h4>We'll help your business <br> to get on a new stage!</h4>
+            </div>
+            <div class="qoute-btn">
+                <a routerLink="contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="skillStream-container">
+        <div class="skills">
+            <div class="skills-leftSection">
+                <span>Our Skills</span>
+                <h4>Why choose us</h4>
+                <p>Star Promotions has helped lots of businesses advertise to target audiences on Facebook, Instagram, Linkedin. Our clients always complimented us for our fresh ideas, powerful strategies, and regular reports.</p>
+                <div class="icon-box">
+                    <ul>
+                        <li style="display: flex; ">
+                            <svg width="54" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#2B81DC">
+                                <path d="M7.5 5.6L5 7L6.4 4.5L5 2L7.5 3.4L10 2L8.6 4.5L10 7L7.5 5.6ZM19.5 15.4L22 14L20.6 16.5L22 19L19.5 17.6L17 19L18.4 16.5L17 14L19.5 15.4ZM22 2L20.6 4.5L22 7L19.5 5.6L17 7L18.4 4.5L17 2L19.5 3.4L22 2ZM13.34 12.78L15.78 10.34L13.66 8.22L11.22 10.66L13.34 12.78ZM14.37 7.29L16.71 9.63C17.1 10 17.1 10.65 16.71 11.04L5.04 22.71C4.65 23.1 4 23.1 3.63 22.71L1.29 20.37C0.899998 20 0.899998 19.35 1.29 18.96L12.96 7.29C13.35 6.9 14 6.9 14.37 7.29Z"></path>
+                            </svg>
+                            <div style="align-self: baseline;">Automation</div>
+                        </li>
+                        <li style="display: flex; ">
+                            <svg width="54" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#2B81DC">
+                                <path d="M19 10C19 11.38 16.88 12.5 15.5 12.5C14.12 12.5 12.75 11.38 12.75 10H11.25C11.25 11.38 9.88 12.5 8.5 12.5C7.12 12.5 5 11.38 5 10H4.25C4.09 10.64 4 11.31 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 11.31 19.91 10.64 19.75 10H19ZM12 4C9.04 4 6.45 5.61 5.07 8H18.93C17.55 5.61 14.96 4 12 4ZM22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C10.6868 22 9.38642 21.7413 8.17317 21.2388C6.95991 20.7362 5.85752 19.9997 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12ZM12 17.23C10.25 17.23 8.71 16.5 7.81 15.42L9.23 14C9.68 14.72 10.75 15.23 12 15.23C13.25 15.23 14.32 14.72 14.77 14L16.19 15.42C15.29 16.5 13.75 17.23 12 17.23Z"></path>
+                            </svg>
+                            <div style="align-self: baseline;">Expertise</div>
+                        </li>
+                        <li style="display: flex; ">
+                            <svg width="54" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#2B81DC">
+                                <path d="M3 3H9V7H3V3ZM15 10H21V14H15V10ZM15 17H21V21H15V17ZM13 13H7V18H13V20H7H5V9H7V11H13V13Z"></path>
+                            </svg>
+                            <div style="align-self: baseline;">The agile approach</div>
+                        </li>
+                        <li style="display: flex; ">
+                            <svg width="54" height="34" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#2B81DC">
+                                <path d="M21 5C19.89 4.65 18.67 4.5 17.5 4.5C15.55 4.5 13.45 4.9 12 6C10.55 4.9 8.45 4.5 6.5 4.5C4.55 4.5 2.45 4.9 1 6V20.65C1 20.9 1.25 21.15 1.5 21.15C1.6 21.15 1.65 21.1 1.75 21.1C3.1 20.45 5.05 20 6.5 20C8.45 20 10.55 20.4 12 21.5C13.35 20.65 15.8 20 17.5 20C19.15 20 20.85 20.3 22.25 21.05C22.35 21.1 22.4 21.1 22.5 21.1C22.75 21.1 23 20.85 23 20.6V6C22.4 5.55 21.75 5.25 21 5ZM21 18.5C19.9 18.15 18.7 18 17.5 18C15.8 18 13.35 18.65 12 19.5V8C13.35 7.15 15.8 6.5 17.5 6.5C18.7 6.5 19.9 6.65 21 7V18.5Z"></path>
+                            </svg>
+                            <div style="align-self:baseline;">Openness</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-rightSection">
+                <img src="https://demo29.atiframe.com/wp-admin/admin-ajax.ph…2Fwp-content%2Fuploads%2F2020%2F01%2Fanalysis.jpg" alt="">
+            </div>
+        </div>
+        <div class="horiBar3"></div>
+    </div>
+    <div class="clients">
+        <div class="clients-content">
+            <span>our Customers</span>
+            <h4>Meet our clients</h4>
+            <p>We worked side by side with the top brands worldwide. Everyday our experience is growing and we are <br> gaining strength.</p>
+        </div>
+        <div class="clients-cardContainer">
+            <div class="client-cards" *ngFor="let logo of clientList">
+                <div class="client-test">
+                    <img src="{{logo.img}}" alt="" width="96%">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

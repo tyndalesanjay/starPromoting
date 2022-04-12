@@ -1,0 +1,48 @@
+<main>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="about-Container">
+        <div class="contact-section1">
+            <span>Get to know Us</span>
+            <h4>About Us</h4>
+            <p>Learn about our company and <br> see how we could be right for you.</p>
+        </div>
+        <div class="company-info">
+            <div class="company-infoSection">
+                <div class="company-backgroundInfo">
+                    <h4>Our Background</h4>
+                </div>                
+                <div class="background-para">
+                    <p>{{paragraph}}</p>
+                </div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial-Card" >
+                    <h4>Customer Testimonials</h4>
+                    <p></p>
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+        <div class="hr1"></div>
+        <div class="image-Grid">
+            <h4>Some of our clients.</h4>
+            <div class="clientList-row">
+                <div class="clientList-column" *ngFor="let client of clientList1">
+                    <img src="{{client.image}}" alt="" >
+                    <img src="{{client.image1}}" alt="" >
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

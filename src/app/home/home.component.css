@@ -1,0 +1,303 @@
+.home-section1 {
+    background-image: url(https://demo29.atiframe.com/wp-content/uploads/2020/02/bg-11.jpg);
+    height: 100vh;
+    display: flex;
+    animation-name: homeBackground;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes homeBackground {
+    from {background-image: url(https://demo29.atiframe.com/wp-content/uploads/2020/01/bg-1.jpg);}
+}
+
+.section1-left {
+    padding: 2em 2em 0 2em;
+    font-size: xx-large;
+    /* border: 2px red solid; */
+    max-width: 55%;
+}
+
+.section1-left h1 {
+    color: #f5f4f8;
+    font-family: 'Bree Serif', serif;
+}
+
+.section1-left p {
+    font-size: 1.6vw;
+    font-weight: thin;
+    padding: 2em 1em 4em 1em;
+    color: black;
+} 
+
+/* .section1-right {
+    width: 40%;
+    background-image: url(https://media.discordapp.net/attachments/889362805713678407/959379473113952286/TDV_M86_02-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10% 20%;
+} */
+
+.horiBar {
+    background-color: #f5f4f8;
+    border: 2px solid #f5f4f8;
+    border-radius: 70% 70% 0 0 ;
+    width: 10%;
+    height: 3em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.horiBar2 {
+    background-color: #FF7E61;
+    border: 2px solid #FF7E61;
+    width: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.section2-services {
+    background-color: #f5f4f8;
+}
+
+.section2-services h3{
+    text-align: center;
+    padding: 1em 1em;
+    font-size: 3vw;
+    /* color: white; */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 25em 25em 25em;
+    grid-template-rows: 18em 15em 2em;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.services-card {
+    border: 1px solid #FF7E61;
+    border-radius: 6px 2px 15px;
+    padding: 1em 1em;
+    max-height: 40vh;
+    width: 20em;
+    font-size: 19px;
+}
+
+.services-card h4 {
+    padding: 0.5em 0.4em;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+.services-card:hover h4{
+    transform: scale(1.1);
+    border-left: 3px solid #FF7E61;
+}
+
+.services-card p {
+    font-weight: thin;
+    font-size: 1.4vw;
+    line-height: 30px;
+
+}
+
+.section3-aboutUs {
+    height: 100vh;
+    background-color: #f5f4f8;
+    /* margin-top: 1%; */
+}
+
+.about-header,
+.aboutUs-info {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.about-header {
+    padding-top: 5%;
+}
+
+.about-header h2 {
+    font-size: xxx-large;
+    color: #FF7E61;
+}
+
+.aboutUs-info p {
+    font-size: 1.7vw;
+    font-weight: thin;
+    line-height: 40px;
+
+}
+
+.about-content {
+    display: flex;
+    /* border: 2px solid #FF7E61; */
+    padding: 0em 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-card {
+    flex-basis: 12%;
+    margin-left: 5%;
+}
+
+.card-info {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+
+.request-qoute {
+    background-image: url(https://demo29.atiframe.com/wp-content/uploads/2020/02/Frame-13-1.png);
+    background-position: 35% 80%;
+}
+
+.qoute-info {
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 10em 0em 3em;
+}
+
+.qoute-info span {
+    font-size: medium;
+    text-transform: uppercase;
+    text-decoration: overline white;
+}
+
+.qoute-info h4 {
+    font-size: xxx-large;
+}
+
+.qoute-btn {
+    margin-top: 5em;
+}
+
+.qoute-info a {
+    border: 1px solid white;
+    color: white;
+    padding: 2em 5em;
+}
+
+.qoute-info a:hover {
+    background-color: #FF7E61;
+    border: 1px solid rgba(0, 0, 0, 0.283);
+    color: black;
+    box-shadow: rgba(128, 128, 128, 0.329) 1px 1px 4px 2px;
+}
+
+.skillStream-container {
+    background-color: #f5f4f8;
+    padding-top: 7%;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills-leftSection {
+    max-width: 50%;
+    padding: 3em 3em;
+}
+
+.skills-leftSection span {
+    color: #2B81DC;
+    text-decoration: overline #FF7E61;
+    text-transform: uppercase;
+    /* color: #FF7E61; */
+}
+
+.skills-leftSection h4 {
+    font-size: 3vw;
+    padding: 0.5em 0;
+}
+
+.skills-leftSection p {
+    font-size: 1.3vw;
+    line-height: 30px;
+}
+
+.icon-box {
+    padding: 2em 0em;
+    align-content: center;
+}
+
+.icon-box ul{
+    display: grid;
+    grid-template-columns: 13em 15em;
+    grid-template-rows: 5em 0em;
+    font-size: larger;
+}
+
+.icon-box span {
+    color: black;
+}
+
+.skills-rightSection {
+    background-image: url(https://demo29.atiframe.com/wp-content/uploads/2020/01/analysis.jpg);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.998) 100%,rgba(0, 0, 0, 0.148) 100%);
+    width: 50%;
+}
+
+.horiBar3 {
+    background-color: #2B81DC;
+    border: 2px solid #2B81DC;
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.clients {
+    background-color: #f5f4f8;
+    height: 100vh;
+}
+
+.clients-content {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.clients-content span {
+    color:#2B81DC;
+    text-transform: uppercase;
+}
+
+.clients-content h4 {
+    padding: 0.5em 1em;
+    font-size: 3vw;
+}
+
+.clients-content p {
+    font-size: 1.5vw;
+}
+
+.clients-cardContainer {
+    /* border: 2px red solid; */
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 18em;
+    padding: 1em 1em;
+}
+
+.client-cards {
+    /* background-color:#ff7e6159; */
+    border: 1px #2b81dcf0 solid;
+    box-shadow: grey 1px 2px 5px 2px ;
+    align-items: center;
+    padding: 1em 2em;
+    margin:0 3% 0 3%;
+    transition: all 0.3s ease-in-out;
+}
+
+.client-cards:hover {
+    background-image: url(https://demo29.atiframe.com/wp-content/uploads/2020/01/Frame-22.png);
+    background-size: cover;
+    transform: translateY(-5%);
+}
+

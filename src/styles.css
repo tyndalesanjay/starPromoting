@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hind+Madurai&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Hind Madurai', sans-serif;
+    color: black;
+}
+
+h4 {
+    font-family: 'Bree Serif', serif;
+
+}
+
+body {
+    background-color: #FF7E61;
+
+}
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
