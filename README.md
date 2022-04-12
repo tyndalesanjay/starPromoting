@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+<!-- ******************************WEBSITE DOCUMENTATION****************************** -->
+
+Creator: Sanjay Tyndale
+Project Name: Star Promotion
+
+## Project Description
+
+    The project was created as a front-end base template for a promotional/marketing Single Page Application (SPA). It shows information of a particular promotional application (Star Promotions).
+
+    -- Features:
+        *Functional Navigation Bar
+        *Information Button - which displays the 
+
